@@ -11,30 +11,30 @@ public class BracketsValidator {
         char[] chars = brackets.toCharArray();
         Stack<Character> stack = new Stack<>();
 
-        for (int i = 0; i < chars.length; i++) {
-            switch (chars[i]) {
+        for (char с : chars) {
+            switch (с) {
                 case '(':
                 case '[':
                 case '{':
-                    stack.push(chars[i]);
+                    stack.push(с);
                     break;
                 case ')':
                     if (stack.peek() == '(')
                         stack.pop();
                     else
-                        stack.push(chars[i]);
+                        stack.push(с);
                     break;
                 case '}':
                     if (stack.peek() == '{')
                         stack.pop();
                     else
-                        stack.push(chars[i]);
+                        stack.push(с);
                     break;
                 case ']':
                     if (stack.peek() == '[')
                         stack.pop();
                     else
-                        stack.push(chars[i]);
+                        stack.push(с);
                     break;
             }
         }
