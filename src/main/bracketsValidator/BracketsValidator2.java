@@ -29,4 +29,3 @@ public class BracketsValidator2 {
         return stack.isEmpty();
     }
 }
-
