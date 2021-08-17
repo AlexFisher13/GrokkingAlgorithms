@@ -1,4 +1,4 @@
-package minPathSum;
+package main.minPathSum;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

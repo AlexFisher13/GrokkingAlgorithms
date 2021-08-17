@@ -1,4 +1,4 @@
-package binarySearch;
+package main.binarySearch;
 
 import java.util.stream.IntStream;
 
@@ -21,6 +21,6 @@ public class BinarySearch {
             count++;
         }
 
-        System.out.println(String.format("Позиция найденного значения: %d, количество шагов: %d", mid, count));
+        System.out.printf("Позиция найденного значения: %d, количество шагов: %d%n", mid, count);
     }
 }

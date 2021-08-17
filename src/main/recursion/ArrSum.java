@@ -1,4 +1,4 @@
-package recursion;
+package main.recursion;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;
