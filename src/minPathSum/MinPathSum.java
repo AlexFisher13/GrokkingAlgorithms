@@ -5,7 +5,9 @@ import java.util.stream.IntStream;
 
 public class MinPathSum {
     public static void main(String[] args) {
-        int[][] grid = {{1, 3, 1}, {1, 5, 1}, {4, 1, 1}};
+        int[][] grid = {{1, 3, 1},
+                        {1, 5, 1},
+                        {4, 1, 1}};
         printGrid(grid);
         int[] shorterRow = getShorterRow(grid);
         int[] shorterColumn = getShorterColumn(grid);
