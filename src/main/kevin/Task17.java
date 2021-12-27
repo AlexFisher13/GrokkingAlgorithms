@@ -6,11 +6,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Task17 {
-
-
     public static void main(String[] args) throws IOException {
-//        String s = "(){(){[]}}{(())}";
-        String s = readFile();
+        String s = new BufferedReader(new InputStreamReader(new FileInputStream("c://advent_17.test.txt"))).readLine();
 
         int couter = 0;
         int sum = 0;
@@ -25,10 +22,5 @@ public class Task17 {
                 sum++;
         }
         System.out.println(sum);
-    }
-
-    static String readFile() throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream("c://advent_17.test.txt")));
-        return reader.readLine();
     }
 }
